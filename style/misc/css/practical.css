@@ -1,0 +1,56 @@
+body {
+	counter-reset: figurecounter;
+}
+
+figure {
+	text-align: center;
+}
+figcaption:before {
+	content: 'Figure ' counter(figurecounter) ".\0000a0\0000a0";
+	counter-increment: figurecounter;
+}
+figcaption {
+	border: 1px solid #cccccc;
+}
+
+
+h1 {
+	font-size: 160%;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	counter-reset: h2counter;	
+}
+
+h2 {
+	font-size: 120%;
+	border-bottom: 1px solid #cccccc;
+	counter-reset: h3counter;	
+}
+h2:before {
+	counter-increment: h2counter;
+	content: counter(h2counter) ".\0000a0\0000a0";
+}
+
+h3 {
+	font-size: 110%;
+	border-bottom: 1px solid #cccccc;	
+}
+h3:before {
+	counter-increment: h3counter;
+	content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+}
+
+.codehilite {
+    width:90%;
+    height: auto;
+    overflow: auto;
+}
+
+table {
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.highlighttable {
+	margin-left:20pt; 
+}

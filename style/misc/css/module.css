@@ -1,0 +1,56 @@
+body {
+  	min-height: 2000px;
+	padding-top: 70px;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+}
+
+.navbar li { color: #000 }
+
+
+.kmaa {
+}
+
+.kma {
+  color: #000;
+  outline: 0;
+}
+
+.kma:hover
+{
+	text-decoration: none;
+	background-color: #ddd;
+}
+
+.kmheading
+{
+	color: #31708f;
+	font-weight: bold;
+}
+
+.kmpill
+{
+	color: #31708f;
+	background-color: #d9edf7;
+	font-weight: bold;
+}
+
+.navbar-collapse.collapse {
+display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}
+
+
+.navbar-nav.navbar-right:last-child {
+margin-right: -15px !important;
+}
+
+.navbar-right {
+float: right!important;
+}
