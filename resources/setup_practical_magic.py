@@ -13,7 +13,7 @@ else:
 if __version__<__required_version__ or True:
     print('Loading ... ')
     import urllib.request
-    content = urllib.request.urlopen ("https://Discrete_Mathematics-202122.github.io/live/resources/setup_practical_magic.zip")
+    content = urllib.request.urlopen ("http://Discrete_Mathematics-202122.github.io/live/resources/setup_practical_magic.zip")
     import zipfile
     from io import BytesIO
     data = zipfile.ZipFile(BytesIO(content.read()))
