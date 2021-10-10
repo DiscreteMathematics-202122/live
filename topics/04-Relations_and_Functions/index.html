@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Discrete Mathematics</title>
+
+    <link href="../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../style/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- Custom styles for this template -->
+    <link href="../../style/codehilite/css/default.css" rel="stylesheet">
+    <link href="../../style/misc/css/module.css" rel="stylesheet">
+
+	<script>
+		var shiftWindow = function() { scrollBy(0, -50) };
+		window.addEventListener("hashchange", shiftWindow);
+		function load() { if (window.location.hash) shiftWindow(); }
+	</script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			
+	    	<div class="collapse navbar-collapse">
+	      		<ul class="nav navbar-nav navbar-left">
+					<!-- Moodle -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=182312" target="_blank"><img height="18pt" src="../../style/misc/img/moodle_logo_on_blue.gif" /></a>
+						</div>						
+					</li>
+		        </ul>
+	      		<ul class="nav navbar-nav navbar-right">
+		
+					<!-- module home -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+						</div>						
+					</li>
+					
+					<!-- topics -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										Relations and Functions
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Topics</li>
+										
+										<li >
+											<a href="../../topics/00-Module_Introduction/index.html">Module Introduction</a>
+										</li>
+										
+										<li >
+											<a href="../../topics/01-Logic/index.html">Logic</a>
+										</li>
+										
+										<li >
+											<a href="../../topics/02-Methods_of_Mathematical_Proof/index.html">Methods of Mathematical Proof</a>
+										</li>
+										
+										<li >
+											<a href="../../topics/03-Sets/index.html">Sets</a>
+										</li>
+										
+										<li class="active">
+											<a href="../../topics/04-Relations_and_Functions/index.html">Relations and Functions</a>
+										</li>
+										
+										<li >
+											<a href="../../topics/05-Enumeration/index.html">Enumeration</a>
+										</li>
+										
+										<li >
+											<a href="../../topics/06-Graphs_and_Networks/index.html">Graphs and Networks</a>
+										</li>
+										
+										<li >
+											<a href="../../topics/07-Recurrence_Relations/index.html">Recurrence Relations</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+
+					<!-- resources -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-th-list"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Resources</li>
+										
+										<li >
+											<a href="#01-Relation_Concepts_and_Definitions">Relation Concepts and Definitions</a>
+										</li>
+										
+										<li >
+											<a href="#02-Relations_on_a_Set">Relations on a Set</a>
+										</li>
+										
+										<li >
+											<a href="#03-Function_Concepts_and_Definitions">Function Concepts and Definitions</a>
+										</li>
+										
+										<li >
+											<a href="#04-Function_Operations">Function Operations</a>
+										</li>
+										
+										<li >
+											<a href="#05-Library_of_Functions">Library of Functions</a>
+										</li>
+										
+										<li >
+											<a href="#51-Tutorial_Sheet_04_-_Relations">Tutorial Sheet 04 - Relations</a>
+										</li>
+										
+										<li >
+											<a href="#52-Tutorial_Sheet_05_-_Functions">Tutorial Sheet 05 - Functions</a>
+										</li>
+										
+										<li >
+											<a href="#61-Chapter_Summary_-_Relations_and_Functions">Chapter Summary - Relations and Functions</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+								
+					<!-- pages
+	        		<li>
+						<div class="navbar-collapse collapse" id="c">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span></span
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li> -->
+					
+	        	</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- contents -->
+	<div class="container">
+
+		<!-- topic meta -->
+		<div class="panel panel-info">
+			<div class="panel-heading">	
+				<h3 class="panel-title">Relations and Functions</h3>
+			</div>
+			<div class="panel-body" style="color:gray">
+				
+				<div class="grid">
+				    <div class="row">
+				        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="width:170px">
+							<img class="km" src="topic.png" width="100%" alt=""></div>
+				        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+							<span><p>In this section we will cover the basics of relations. A relation is essentially a set where every element is an ordered pair, called a <strong>key-value</strong> pair.  From this we will cover a very importnat type of relation called a <strong>function</strong>.</p></span>
+							<ul>
+								
+							</ul>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<div></div>
+
+		<!-- topic resources (prebuilt using resource doit task) -->
+		<ul class="media-list">
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="01-Relation_Concepts_and_Definitions"></a>
+	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Relation Concepts and Definitions</h4>
+		<span></span>
+		<div></div>
+		<ul>
+			
+			<li>Defining a relation via Cartesian product</li>
+			
+			<li>Relation Terminology</li>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="01-Relation_Concepts_and_Definitions/04-01-Relation_Concepts_and_Definitions-Slides-Handout.pdf" >Handout</a></li>
+			
+		  	<li><a class="kmpill" href="01-Relation_Concepts_and_Definitions/04-01-Relation_Concepts_and_Definitions-Slides-Presentation.pdf" >Presentation</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="02-Relations_on_a_Set"></a>
+	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Relations on a Set</h4>
+		<span></span>
+		<div></div>
+		<ul>
+			
+			<li>Properties of relations on sets</li>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="02-Relations_on_a_Set/04-02-Relations_on_a_Set-Slides-Handout.pdf" >Handout</a></li>
+			
+		  	<li><a class="kmpill" href="02-Relations_on_a_Set/04-02-Relations_on_a_Set-Slides-Presentation.pdf" >Presentation</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="03-Function_Concepts_and_Definitions"></a>
+	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Function Concepts and Definitions</h4>
+		<span></span>
+		<div></div>
+		<ul>
+			
+			<li>Definition of a Function</li>
+			
+			<li>Function Properties</li>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="03-Function_Concepts_and_Definitions/04-03-Function_Concepts_and_Definitions-Slides-Handout.pdf" >Handout</a></li>
+			
+		  	<li><a class="kmpill" href="03-Function_Concepts_and_Definitions/04-03-Function_Concepts_and_Definitions-Slides-Presentation.pdf" >Presentation</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="04-Function_Operations"></a>
+	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Function Operations</h4>
+		<span></span>
+		<div></div>
+		<ul>
+			
+			<li>Function Operations</li>
+			
+			<li>Inverse of a Function --- existence conditions and derivation</li>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="04-Function_Operations/04-04-Function_Operations-Slides-Handout.pdf" >Handout</a></li>
+			
+		  	<li><a class="kmpill" href="04-Function_Operations/04-04-Function_Operations-Slides-Presentation.pdf" >Presentation</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="05-Library_of_Functions"></a>
+	<span class=" fa  fa-book pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Library of Functions</h4>
+		<span></span>
+		<div></div>
+		<ul>
+			
+			<li>Graphical representation on the plane</li>
+			
+			<li>Preview of useful functions</li>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="05-Library_of_Functions/04-05-Library_of_Functions-Slides-Handout.pdf" >Handout</a></li>
+			
+		  	<li><a class="kmpill" href="05-Library_of_Functions/04-05-Library_of_Functions-Slides-Presentation.pdf" >Presentation</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="51-Tutorial_Sheet_04_-_Relations"></a>
+	<span class=" fa fa-edit pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Tutorial Sheet 04 - Relations</h4>
+		<span>Tutorial sheet for theory questions relating to relations.</span>
+		<div></div>
+		<ul>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="51-Tutorial_Sheet_04_-_Relations/04-51-Tutorial_Sheet_04_-_Relations.pdf" >Tutorial Sheet 04 - Relations</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="52-Tutorial_Sheet_05_-_Functions"></a>
+	<span class=" fa fa-edit pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Tutorial Sheet 05 - Functions</h4>
+		<span>Tutorial sheet for theory questions relating to functions.</span>
+		<div></div>
+		<ul>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="52-Tutorial_Sheet_05_-_Functions/04-52-Tutorial_Sheet_05_-_Functions.pdf" >Tutorial Sheet 05 - Functions</a></li>
+			
+		</ul>
+	</div>
+</li>
+			
+				
+
+<li class="media">
+	<a class="kmaa" id="61-Chapter_Summary_-_Relations_and_Functions"></a>
+	<span class=" fa fa-check-square-o pull-left kmheading" style="font-size:200%"></span>
+	<div class="media-body">
+		<h4 class="media-heading kmheading">Chapter Summary - Relations and Functions</h4>
+		<span>Summary of chapter (concepts/tasks/next steps)</span>
+		<div></div>
+		<ul>
+			
+		</ul>
+		<ul class="pager">
+			
+		  	<li><a class="kmpill" href="61-Chapter_Summary_-_Relations_and_Functions/04-61-Chapter_Summary_-_Relations_and_Functions.pdf" >Chapter Summary - Relations and Functions</a></li>
+			
+		</ul>
+	</div>
+</li>
+						
+		</ul>
+
+	</div>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../style/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
