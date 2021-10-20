@@ -1,0 +1,4 @@
+brief: A brief description to a resource 
+description: A longer descriptions to a resource.
+type: default
+state: public
